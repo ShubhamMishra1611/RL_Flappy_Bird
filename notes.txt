@@ -1,0 +1,35 @@
+Steps to be followed:
+    1.Make the game which is controlled by user.
+
+    2.Now change the game so that agent can control ...like removing keydown 
+    event and initiating game class from coding file... main play function works 
+    on action and return rewards
+    
+    3.Now make a agent that take rewards and gameover and state as input 
+    and returns action as output after somewhat exposing it to randomness.
+
+    4.Agent is also supposed to remember the stuff and perform two traing 
+        a) Short term training
+        b) Long term training
+
+    5.Making the model which takes some feature as input and return the action based
+    on learning ,forward feeding.
+
+
+What is rewarding policy?
+    If your score inc. then reward is +10
+    If you dies then reward is -10
+    Otherwise its zero
+
+
+What does state consists of ?
+    1.Birds y-cordinates
+    2.Its danger from the close pipe
+        danger is computed as a funciton of distance from the pipe and if it jumps condition
+
+What are actions ?
+    Only jump value as True or False after checking the value.
+    Again the game looks so flithy to me .... lets see if AI will be able to learn it or not ....
+
+I wish there is no bus in the game to be figured out by the AI.
+
