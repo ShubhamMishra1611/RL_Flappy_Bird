@@ -2,18 +2,20 @@ from random import random
 import pygame
 import random
 from collections import namedtuple
+
 pygame.init()
+
 G=2# value of gravity
 SPEED=40# speed of game
-# rang
+# colors
 BLACK = (0,0,0)
 WHITE = (255, 255, 255)
-GREEN=(0,128,0)
+GREEN =(0,200,0)
 BLUE1 = (0, 0, 255)
 BLUE2 = (0, 100, 255)
 
 # bird  size...I mean radius
-SIZE=20
+SIZE = 20
 #font vagera
 font=pygame.font.SysFont('arial',25)
 
@@ -29,7 +31,7 @@ class flappybird:
         self.h=h
         #init display
         self.display=pygame.display.set_mode((self.w,self.h))
-        pygame.display.set_caption("flappy bird")
+        pygame.display.set_caption("Flappy Bird")
         self.Clock=pygame.time.Clock()
         self.reset()
         
